@@ -1,6 +1,6 @@
 const	{ prompt } = require('inquirer'),
-			{ fix } = require('./scripts/main'),
-			program  = require('commander');
+		{ fix } = require('./scripts/main'),
+		program  = require('commander');
 
 const params = [
 	{
@@ -28,12 +28,12 @@ const params = [
 
 program
 	.version('0.0.1')
-	.description('Dolby Labs XML Fixer');
+	.description('DaVinci Resolve Studio XML Fixer');
 
 program
-	.command('fixDolbyLabsXML [delta] [sign]')
+	.command('dvrsxml-fixer [delta] [sign]')
 	.alias('fix')
-	.description('Fix records In values in an XML file')
+	.description('Fix Record > In values in DaVinci Record Studio XML files.')
 	.action((delta, sign) => {
 		prompt(params).then(inputs =>
 			fix(inputs)
