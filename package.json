@@ -1,0 +1,17 @@
+{
+  "name": "XML-Fixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Termini, Martín",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "inquirer": "^7.1.0",
+    "xml2js": "^0.4.23"
+  }
+}
